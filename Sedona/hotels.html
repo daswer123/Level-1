@@ -18,31 +18,72 @@
       </nav>
     </header>
     <main>
-      <h1 class= "visually-hidden">Подбор гостинецы дял вас</h1>
+      <h1 class= "visually-hidden">Подбор гостинецы для вас</h1>
+      <form method= "post" action= "https://echo.htmlacademy.ru" class=" options-form">
       <section class= "options">
         <h2 class= "visually-hidden">Параметры гостинецы</h2>
-        <div class= "options-addtionals">
-          <h2>Инфраструктура:</h2>
-          <!-- Сдeсь будет форма -->
-          <ul class= "addtionals-list">
-            <li>Бассейн</li>
-            <li>Парковка</li>
-            <li>Wi-Fi</li>
-          </ul>
-        </div>
-        <div class= "options-type">
-          <h2>Тип Жилья:</h2>
-          <ul class= "type-list">
-            <li>Гостиница</li>
-            <li>Мотель</li>
-            <li>Апартаменты</li>
-          </ul>
-        </div>
+          <fieldset class= "additonals">
+            <legend class= "visually-hidden">Инфраструктура</legend>
+            <h2> Инфраструктура </h2>
+            <ul class= "additional-list">
+              <li><label class= "additionals-item">
+                <input type= "checkbox" name= "additionals" value="pool" class= "visually-hidden" checked>
+                Бассейн
+                <span class= "real-checkbox"></span>
+              </label></li>
+              <li><label class= "additionals-item">
+                <input type= "checkbox" name= "additionals" value="parking" class= "visually-hidden">
+                Парковка
+                <span class= "real-checkbox"></span>
+              </label></li>
+              <li><label class= "additionals-item">
+                <input type= "checkbox" name= "additionals" value="wi-fi" class= "visually-hidden">
+                Wi-fi
+                <span class= "real-checkbox"></span>
+              </label></li>
+            </ul>
+          </fieldset>
+          <fieldset class= "buildtype">
+            <legend class= "visually-hidden">Тип жилья</legend>
+            <h2> Тип жилья </h2>
+            <ul class= "additional-list">
+              <li><label class= "additionals-item">
+                <input type= "checkbox" name= "type" value="hotel" class= "visually-hidden" checked>
+                Гостиница
+                <span class= "real-checkbox"></span>
+              </label></li>
+              <li><label class= "additionals-item">
+                <input type= "checkbox" name= "type" value="motel" class= "visually-hidden" checked>
+                Мотель
+                <span class= "real-checkbox"></span>
+              </label></li>
+              <li><label class= "additionals-item">
+                <input type= "checkbox" name= "type" value="appartaments" class= "visually-hidden" checked>
+                Аппартаменты
+                <span class= "real-checkbox"></span>
+              </label></li>
+            </ul>
+          </fieldset>
       </section>
       <section class= "cost">
         <h2>Стоимость в сутки</h2>
-        <!-- Сдесь будет форма -->
+        <div class= "costs-form">
+          <p>
+            <label class="visually-hidden">От</label>
+            <input type= "text" name= "min" value="" class= "costs-min" placeholder="От 0">
+          </p>
+          <p>
+            <label class="visually-hidden">До</label>
+            <input type= "text" name= "max" value="" class= "costs-max" placeholder="До 30000">
+          </p>
+          <div class= "costs-range">
+            <span class= "range-select"></span>
+            <span class= "range-line"></span>
+          </div>
+        </div>
+        <button class= "button button-form" type= "submit">Показать</button>
       </section>
+      </form>
       <div class= "filter">
         <h2>Найдено: 2+1</h2>
         <p>Сортировка</p>
@@ -99,9 +140,9 @@
       <p><b class= "Heshtag"> #VISITSEDONA </b></p>
       <div class= "social">
         <ul class= "social-list">
-          <li><a href= "#" class= "button social-button social-button-tw">Twitter</a></li>
-          <li><a href= "#" class= "button social-button social-button-fb">Facebook</a></li>
-          <li><a href= "#" class= "button social-button social-button-yt">Youtube</a></li>
+          <li><a href= "#" class= "button social-button social-button-tw" aria-label= "Twitter">Twitter</a></li>
+          <li><a href= "#" class= "button social-button social-button-fb" aria-label= "Facebook">Facebook</a></li>
+          <li><a href= "#" class= "button social-button social-button-yt" aria-label= "Youtube">Youtube</a></li>
         </ul>
       </div>
       <p class= "copyright">

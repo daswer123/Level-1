@@ -82,7 +82,31 @@
         <b>Заинтересовались?</b>
         <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения в седоне.</p>
         <a href= "#" class= "booking-button">Поиск Гостиницы в Седоне</a>
-        <!-- Форма тут скоро будет -->
+        <form method= "post" action= "https://echo.htmlacademy.ru" class= "booking-form">
+          <p>
+            <label for= "checkin">Дата заезда:</label>
+            <input type= "text" id= "checkin" name="checkin" value="" placeholder="24 апреля 2017">
+          </p>
+          <p>
+            <label for= "checkout">Дата выезда:</label>
+            <input type= "text" id= "checkout" name="checkout" value="" placeholder="4 июля 2017">
+          </p>
+          <div class= "guests">
+            <p>
+              <label for= "adult">Взрослые</label>
+              <span class= "plus"></span>
+              <input type= "number" id= "adult" name="adult" value="" placeholder="2">
+              <span class= "minus"></span>
+            </p>
+            <p>
+              <label for= "child">Взрослые</label>
+              <span class= "plus"></span>
+              <input type= "number" id= "child" name="child" value="" placeholder="0">
+              <span class= "minus"></span>
+            </p>
+          </div>
+          <button type= "submit" class= "button button-booking">Найти</button>
+        </form>
       </section>
       <img src= "img/index/map.jpg" class= "map" width="1200" height="600" alt="Карта">
     </main>
@@ -90,9 +114,9 @@
       <p><b class= "Heshtag"> #VISITSEDONA </b></p>
       <div class= "social">
         <ul class= "social-list">
-          <li><a href= "#" class= "button social-button social-button-tw">Twitter</a></li>
-          <li><a href= "#" class= "button social-button social-button-fb">Facebook</a></li>
-          <li><a href= "#" class= "button social-button social-button-yt">Youtube</a></li>
+          <li><a href= "#" class= "button social-button social-button-tw" aria-label= "Twitter">Twitter</a></li>
+          <li><a href= "#" class= "button social-button social-button-fb" aria-label= "Facebook">Facebook</a></li>
+          <li><a href= "#" class= "button social-button social-button-yt" aria-label= "Youtube">Youtube</a></li>
         </ul>
       </div>
       <p class= "copyright">
