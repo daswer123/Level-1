@@ -88,7 +88,25 @@
         <section class= "booking">
           <h2>Записаться</h2>
           <p>Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
-          <!-- Здесь будет форма -->
+          <form method= "post" action= "https://echo.htmlacademy.ru" class= "booking-form">
+            <p class= "booking-item">
+              <label for= "date">Дата</label>
+              <input type= "text" id= "date" name= "date" value= "" placeholder= "08.10.2017">
+            </p>
+            <p class= "booking-item">
+              <label for= "time">Время</label>
+              <input type= "text" id= "time" name= "time" value= "" placeholder= "10:00">
+            </p>
+            <p class= "booking-item">
+              <label for= "name">Ваше имя</label>
+              <input type= "text" id= "name" name= "name" value= "" placeholder= "Борода">
+            </p>
+            <p class= "booking-item">
+              <label for= "tel">Телефон</label>
+              <input type= "tel" id= "tel" name= "tel" value= "" placeholder= "+7 123 456-78-90">
+            </p>
+            <button class= "button" type= "submit">Отправить</button>
+          </form>
         </section>
       </main>
       <footer class= "main-footer">
@@ -115,13 +133,29 @@
       <section class= "modal modal-login">
         <h2>Личный Кабинет</h2>
         <p>Введите пожалуйста свой логин и пароль</p>
-        <!-- Здесь будет форма -->
-        <span class= "exit">X</span>
+        <form method= "post" action= "https://echo.htmlacademy.ru" class= "login-form">
+          <p>
+            <label class= "visually-hidden" for= "login">Логин</label>
+            <input type= "text" id= "login" name= "login" value= "" placeholder= "Логин">
+          </p>
+          <p>
+            <label class= "visually-hidden" for= "pass">Логин</label>
+            <input type= "password" id= "pass" name= "pasword" value= "" placeholder= "Пароль">
+          </p>
+          <p class= "login-pass-restore">
+            <label class= "login-checkbox">
+              <input type= "checkbox" name= "remember" class= "visually-hidden">
+              Запомнить меня
+              <span class= "checkbox-indicator"></span>
+            </label>
+          </p>
+        </form>
+        <button type= "button" class= "button-close button">Закрыть</button>
       </section>
       <section class= "modal modal-map">
         <h2 class= "visually-hidden">Как добраться</h2>
-        <!-- Здесь будет Карта -->
-        <span class= "exit">X</span>
+        <img src= "img/index/map.jpg" alt= "Адрес: г.Санкт-Петербург, Б.конющенная, д.19/8"  width= "766" height= "560">
+        <button type= "button" class= "exit">Выйти</button>
       </section>
   </body>
 </html>

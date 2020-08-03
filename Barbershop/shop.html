@@ -30,8 +30,84 @@
         </ul>
         <section class= "options">
           <h2 class= "visually-hidden">Параметры поиска</h2>
-        <!-- Сдесь будет форма -->
-        <!-- Сдесь будет форма -->
+          <form method= "post" action= "https://echo.htmlacademy.ru" class= "options-form">
+            <fieldset class= "makers">
+              <legend>Производители</legend>
+              <h2> Производители </h2>
+              <ul class= "makers-list">
+                <li>
+                  <label class= "maker-name">
+                    <input class= "visually-hidden" type= "checkbox" name= "makers" value= "Batcher of California" checked>
+                    Baxter of california
+                    <span class= "maker-real-checkbox"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class= "maker-name">
+                    <input class= "visually-hidden" type= "checkbox" name= "makers" value= "mr natty">
+                    Mr natty
+                    <span class= "maker-real-checkbox"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class= "maker-name">
+                    <input class= "visually-hidden" type= "checkbox" name= "makers" value= "Suavecito" checked>
+                    Suavecito
+                    <span class= "maker-real-checkbox"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class= "maker-name">
+                    <input class= "visually-hidden" type= "checkbox" name= "makers" value= "Malin+Goetz">
+                    Malin+Goetz
+                    <span class= "maker-real-checkbox"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class= "maker-name">
+                    <input class= "visually-hidden" type= "checkbox" name= "makers" value= "Muray's">
+                    Muray's
+                    <span class= "maker-real-checkbox"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class= "maker-name">
+                    <input class= "visually-hidden" type= "checkbox" name= "makers" value= "American crew" checked>
+                    American crew
+                    <span class= "maker-real-checkbox"></span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class= "option-type">
+              <legend>Группа товара</legend>
+              <h2>Группы товаров</h2>
+              <ul class= "option-type-list">
+                <li>
+                  <label class= "type-item">
+                    <input class= "visually-hidden" type= "radio" name= "type" value= "Britva">
+                    Бритвенные принадлежоности
+                    <span class= "option-radio"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class= "type-item">
+                    <input class= "visually-hidden" type= "radio" name= "type" value= "Sredstva prosto" checked>
+                    Средства для ухода
+                    <span class= "option-radio"></span>
+                  </label>
+                </li>
+                <li>
+                  <label class= "type-item">
+                    <input class= "visually-hidden" type= "radio" name= "type" value= "Accsesuries">
+                    Акссесуары
+                    <span class= "option-radio"></span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type= "submit" class= "button button-options">Показать</button>
+          </form>
         </section>
         <section class= "items">
           <h2 class= "visually-hidden">Результаты поиска</h2>
@@ -104,10 +180,27 @@
         <!-- Здесь будет форма -->
         <span class= "exit">X</span>
       </section>
-      <section class= "modal modal-map">
-        <h2 class= "visually-hidden">Как добраться</h2>
-        <!-- Здесь будет Карта -->
-        <span class= "exit">X</span>
+      <section class= "modal modal-login">
+        <h2>Личный Кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form method= "post" action= "https://echo.htmlacademy.ru" class= "login-form">
+          <p>
+            <label class= "visually-hidden" for= "login">Логин</label>
+            <input type= "text" id= "login" name= "login" value= "" placeholder= "Логин">
+          </p>
+          <p>
+            <label class= "visually-hidden" for= "pass">Логин</label>
+            <input type= "password" id= "pass" name= "pasword" value= "" placeholder= "Пароль">
+          </p>
+          <p class= "login-pass-restore">
+            <label class= "login-checkbox">
+              <input type= "checkbox" name= "remember" class= "visually-hidden">
+              Запомнить меня
+              <span class= "checkbox-indicator"></span>
+            </label>
+          </p>
+        </form>
+        <button type= "button" class= "button-close button">Закрыть</button>
       </section>
   </body>
 </html>
