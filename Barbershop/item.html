@@ -91,5 +91,28 @@
         <!-- Здесь будет Карта -->
         <span class= "exit">X</span>
       </section>
+
+      <section class= "modal modal-login">
+        <h2>Личный Кабинет</h2>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <form method= "post" action= "https://echo.htmlacademy.ru" class= "login-form">
+          <p>
+            <label class= "visually-hidden" for= "login">Логин</label>
+            <input type= "text" id= "login" name= "login" value= "" placeholder= "Логин">
+          </p>
+          <p>
+            <label class= "visually-hidden" for= "pass">Логин</label>
+            <input type= "password" id= "pass" name= "pasword" value= "" placeholder= "Пароль">
+          </p>
+          <p class= "login-pass-restore">
+            <label class= "login-checkbox">
+              <input type= "checkbox" name= "remember" class= "visually-hidden">
+              Запомнить меня
+              <span class= "checkbox-indicator"></span>
+            </label>
+          </p>
+        </form>
+        <button type= "button" class= "button-close button">Закрыть</button>
+      </section>
   </body>
 </html>
