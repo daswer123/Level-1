@@ -3,6 +3,7 @@
   <head>
     <title>Barbershop</title>
     <meta charset= "utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel= "stylesheet" href= "css/style.css">
   </head>
   <body>
@@ -18,7 +19,7 @@
         </ul>
       </nav>
         <ul class= "user-nav">
-          <li class= "user-login"><a href= "#"></a></li>
+          <li class= "user-login"><a href= "#">Вход</a></li>
         </ul>
       </header>
       <main>
@@ -49,9 +50,10 @@
             </li>
           </ul>
         </section>
-        <section class= "news">
-          <h2>Новости</h2>
-          <ul class= "news-list">
+        <div class= "wrapper-blocks">
+          <section class= "news">
+           <h2>Новости</h2>
+           <ul class= "news-list">
             <li class= "news-item">
               <p>Нам наконец завезли ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
               <time datetime= "2020-03-22">22 марта</time>
@@ -60,20 +62,22 @@
               <p>В нашей команде пополнение, Борис "Бритва" стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
               <time datetime= "2018-02-01">1 февраля</time>
             </ul>
-            <a href= "#" class= "news-link">Все новости</a>
-        </section>
-        <section class= "fotogallery">
-          <h2>Фотогалерея</h2>
-          <figure class= "fotogallery-list">
-            <img src= "img/fotogallery.jpg" width= "328" height= "164" alt= "Фотография студии">
-          </figure>
-          <p>
+            <a href= "#" class= "button news-link">Все новости</a>
+          </section>
+          <section class= "fotogallery">
+           <h2>Фотогалерея</h2>
+           <figure class= "fotogallery-list">
+            <img src= "img/index/fotogallery.jpg" width= "328" height= "164" alt= "Фотография студии">
+           </figure>
+           <p>
             <label class= "visually-hidden">Кнопка вперед</label>
             <button type= "button" class= "button fotogallery-button button-next">Вперед</button>
             <label class= "visually-hidden">Кнопка назад</label>
-            <button type= "button" class= "button fotogallery-button button-back">Вперед</button>
+            <button type= "button" class= "button fotogallery-button button-back">Назад</button>
           </p>
         </section>
+      </div>
+      <div class= "wrapper-blocks">
         <section class= "contacts">
           <h2>Контактная информация</h2>
           <p class= "adress">
@@ -112,6 +116,7 @@
             <button class= "button" type= "submit">Отправить</button>
           </form>
         </section>
+      </div>
       </main>
       <footer class= "main-footer">
         <p class= "footer-contacts">

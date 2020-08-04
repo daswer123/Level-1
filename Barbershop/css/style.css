@@ -1,0 +1,144 @@
+.visually-hidden{
+  padding: 0;
+  margin: 0;
+
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  visibility: hidden;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans Narrow","Aria", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f7f4f1;
+
+  background-image: url("../img/index/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: black;
+}
+
+.main-header{
+  background-color: black;
+}
+
+.site-nav,
+.user-nav{
+  list-style: none;
+}
+
+.site-nav a,
+.user-nav a{
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #f7f4f1;
+}
+
+.features-list{
+  list-style: none;
+  text-align: center;
+}
+
+.features-list h3{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.wrapper-blocks{
+  color: black;
+  background-color: grey;
+  background-image: url("../img/bg-all.png");
+  background-repeat: repeat;
+}
+
+.wrapper-blocks h2{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.button{
+  font: inherit;
+  background-color: #000000;
+  color: white;
+  text-decoration: none;
+
+  border: 0px;
+  border-radius: 0px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.news-list{
+  list-style: none;
+}
+
+.news-list time{
+  transform: none;
+}
+
+.fotogallery figure{
+  border: 7px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.booking input{
+  background-color: transparent;
+  border: 2px solid black;
+
+}
+
+.main-footer{
+  color: white;
+  background-color: #252525;
+}
+
+.footer-contacts a{
+  color:white;
+}
+
+.social{
+  text-align: center;
+}
+
+.social-list{
+  list-style: none;
+}
+
+.social-button{
+  text-align: center;
+}
+
+.copyright{
+  text-align: center;
+}
+
+.modal{
+  color:black;
+
+  background-image: url("../img/bg-all.png");
+  background-color: white;
+  background-repeat: repeat;
+}
+
+.modal h2{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"]{
+  font: inherit;
+  text-transform: uppercase;
+  color: black;
+
+  background color: #f9f6f3;
+  border: 2px solid black;
+}
