@@ -1,0 +1,227 @@
+.visually-hidden{
+  padding: 0;
+  margin: 0;
+
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  visibility: hidden;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans","Arial", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  background-color: white;
+
+}
+
+.site-navigate{
+  list-style: none;
+}
+
+.site-navigate a{
+  color: black;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.slogan{
+  line-height: 26px;
+}
+
+.slogan b {
+    font-size: 21px;
+}
+
+.feature{
+  background-color: #81b3d2;
+  color: white;
+}
+
+.feature h2{
+  font-size: 21px;
+}
+
+.specials{
+  background-color: #ffffff;
+}
+
+.specials-list,
+.feature-list{
+  list-style: none;
+}
+
+.specials-list b,
+.feature-list b {
+  font-size: 21px;
+}
+
+.other-feature{
+   background-color: #eeeeee;
+}
+
+.booking b{
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.booking p{
+  line-height: 24px;
+}
+
+.booking-button{
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+
+  background-color: #766357;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.booking-form{
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.booking-form input{
+  font: inherit;
+  background-color: #eeeeee;
+  border: 0;
+}
+
+.guests input{
+  text-align: center;
+}
+
+.find-booking{
+  color: white;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 24px;
+  border: 0;
+
+  background-color: #81b3d2;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+.main-footer{
+  line-height: 26px;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.Heshtag{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.social-list{
+  list-style: none;
+}
+
+.social-button{
+  background-color:#81b3d2;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+.social-button-tw{
+  background-image: url("../img/index/twitter.svg");
+  background-repeat: no-repeat;
+}
+
+.social-button-fb{
+  background-image: url("../img/index/fb.svg");
+  background-repeat: no-repeat;
+}
+.social-button-yt{
+  background-image: url("../img/index/youtube.svg");
+  background-repeat: no-repeat;
+}
+
+.options{
+  color: white;
+  background-image: url("../img/hotels/filter.jpg");
+}
+
+.additional-list{
+  list-style: none;
+}
+
+.options h2{
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter{
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.filter-options{
+  list-style: none;
+}
+
+.filter-options a{
+  color: #e6e6e6;
+}
+
+.filter-options .active-option{
+  color: #81b3d2;
+  text-decoration: none;
+}
+
+.filter h2{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.filter-buttons{
+  list-style: none;
+}
+
+.hotels-list{
+  list-style: none;
+}
+
+.hotel h3{
+  font-size:21px;
+  line-height: 26px;
+}
+
+.button{
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+}
+
+.button-blue{
+  background-color: #81b3d2;
+}
+
+.button-brown{
+  background-color: #766357;
+}
+
+.rate{
+  background-color: #f2f2f2;
+}
+
+.starts{
+  background-image: url(../img/hotels/star.svg);
+  background-repeat: repeat-x;
+}
