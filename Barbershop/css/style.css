@@ -142,3 +142,109 @@ body{
   background color: #f9f6f3;
   border: 2px solid black;
 }
+
+.inner-page{
+  color: black;
+
+
+  background-color: grey;
+  background-image: url("../img/bg-all.png");
+  background-repeat: repeat;
+
+}
+.price-page{
+  line-height: 18px;
+}
+
+.headcrumbs{
+  list-style: none;
+}
+
+
+.headcrumbs a{
+  color: black;
+  text-decoration: none;
+}
+
+.headcrumbs .headcrumbs-active{
+  color: #aba9a7;
+}
+
+.options h2{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.options ul{
+  list-style: none;
+}
+
+.item-list{
+  list-style: none;
+}
+
+.buy{
+  background-color: #e5e5e5;
+}
+
+.item {
+  background-color: #ffffff;
+}
+
+.navigation-list{
+  list-style: none;
+}
+
+.inner-page h1{
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.lead-text{
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.price-arsenal h2{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.arsenal-list{
+  list-style: none;
+}
+
+.price h2{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.prices{
+  border: 2px solid black;
+}
+
+.prices td{
+  padding: 0;
+}
+
+.prices td:nth-child(2){
+  border-left: 1px solid black;
+}
+
+
+.price-about h2{
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.additional-foto{
+  list-style: none;
+}
+
+.aricul{
+  color: #aba9a7;
+}
+
+.item-goods{
+  list-style: none;
+}
