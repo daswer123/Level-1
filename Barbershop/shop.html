@@ -6,29 +6,36 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
     <link rel= "stylesheet" href= "css/style.css">
   </head>
-  <body class= "inner-page price-page">
-    <header class= "main-header">
+  <body  class= "inner-page">
+    <header>
       <nav class= "main-nav">
-        <a href= "#" class= "main-header-logo"><img src= "img/logo.svg" alt= "Логотип Barbershop" width= "111" height= "150"></a>
-        <ul class= "site-nav">
-          <li><a href= "#">Информация</a></li>
-          <li><a href= "#">Новости</a></li>
-          <li><a href= "#">Прайс-лист</a></li>
-          <li><a href= "#" class= "active">Магазин</a></li>
-          <li><a href= "#">Контакты</a></li>
-        </ul>
-      </nav>
-        <ul class= "user-nav">
-          <li class= "user-login"><a href= "#"></a></li>
-        </ul>
+         <div class= "nav-wrapp">
+          <div class= "container">
+          <a href= "#" class= "header-logo"><img src= "img/logo.svg" alt= "Логотип Barbershop" width= "110" height= "25"></a>
+          <ul class= "site-nav">
+            <li><a href= "#">Информация</a></li>
+            <li><a href= "#">Новости</a></li>
+            <li><a href= "#">Прайс-лист</a></li>
+            <li><a href= "#">Магазин</a></li>
+            <li><a href= "#">Контакты</a></li>
+          </ul>
+          <ul class= "user-nav">
+            <li class= "user-login"><a href= "#">Вход</a></li>
+          </ul>
+        </div>
+      </div>
       </header>
       <main>
+        <div class= "container">
         <h1>Средства для ухода</h1>
         <ul class= "headcrumbs">
           <li><a href= "#">Главная</a></li>
           <li><a href= "#">Магазин</a></li>
           <li><a href= "#" class= "headcrumbs-active">Средства для ухода </a></li>
         </ul>
+      </div>
+      <div class= "container">
+        <div class= "wrapper">
         <section class= "options">
           <h2 class= "visually-hidden">Параметры поиска</h2>
           <form method= "post" action= "https://echo.htmlacademy.ru" class= "options-form">
@@ -115,36 +122,44 @@
           <ul class= "item-list">
             <li class= "item">
               <img src= "img/shop/1.jpg" width= "220" height= "165" alt= "Фото товара">
+              <div class= "about-item">
               <h3>Набор путешествий "Baxter of california"</h3>
-              <p class= "buy">2900 Р <a href="#" class= "price button"> Купить </a></p>
-            </li>
+              <p class= "buy"> <span class= "value">2900 Р</span> <a href="#" class= "price-button button"> Купить </a></p>
+            </div> </li>
             <li class= "item">
               <img src= "img/shop/2.jpg" width= "220" height= "165" alt= "Фото товара">
+              <div class= "about-item">
               <h3>Увлажняющий крем "Baxter of california"</h3>
-              <p class= "buy">750 Р <a href="#" class= "price button"> Купить </a></p>
-            </li>
+              <p class= "buy"><span class= "value">750 Р </span><a href="#" class= "price-button button"> Купить </a></p>
+          </div>  </li>
             <li class= "item">
               <img src= "img/shop/3.jpg" width= "220" height= "165" alt= "Фото товара">
+              <div class= "about-item">
               <h3>Гель для волос "Suavecito"</h3>
-              <p class= "buy">290 Р <a href="#" class= "price button"> Купить </a></p>
-            </li>
+              <p class= "buy"><span class= "value">290 Р </span><a href="#" class= "price-button button"> Купить </a></p>
+          </div>  </li>
             <li class= "item">
               <img src= "img/shop/4.jpg" width= "220" height= "165" alt= "Фото товара">
+              <div class= "about-item">
               <h3>Глина для укладки волос "American crew"</h3>
-              <p class= "buy">500 Р <a href="#" class= "price button"> Купить </a></p>
-            </li>
+              <p class= "buy"><span class= "value">500 Р </span><a href="#" class= "price-button button"> Купить </a></p>
+          </div>  </li>
             <li class= "item">
               <img src= "img/shop/5.jpg" width= "220" height= "165" alt= "Фото товара">
+              <div class= "about-item">
               <h3>Гель для волос "American crew"</h3>
-              <p class= "buy">300 Р <a href="#" class= "price button"> Купить </a></p>
-            </li>
+              <p class= "buy"><span class= "value">300 Р </span><a href="#" class= "price-button button"> Купить </a></p>
+          </div>  </li>
             <li class= "item">
               <img src= "img/shop/6.jpg" width= "220" height= "165" alt= "Фото товара">
+              <div class= "about-item">
               <h3>Набор бритья "Baxter of california"</h3>
-              <p class= "buy">3900 Р <a href="#" class= "price button"> Купить </a></p>
+              <p class= "buy"><span class= "value">3900 Р </span><a href="#" class= "price-button button"> Купить </a></p>
+            </div>
             </li>
           </ul>
         </section>
+      </div>
         <nav class= "items-navigation">
           <ul class= "navigation-list">
             <li><a href= "#" class= "button">1</a></li>
@@ -153,8 +168,10 @@
             <li><a href= "#" class= "button">4</a></li>
           </ul>
         </nav>
+      </div>
       </main>
       <footer class= "main-footer">
+        <div class= "container">
         <p class= "footer-contacts">
           Барбершоп "Бородинский"<br>
           Адрес: г.Санкт-Петербург, Б.конющенная, д.19/8 <br>
@@ -173,6 +190,7 @@
           <b>Разработано:</b>
           <a href= "#" class= "button">HTMLACADEMY</a>
         </p>
+      </div>
       </footer>
 
       <section class= "modal modal-login">
