@@ -40,9 +40,13 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
+}
 
-
-  justify-content: space-between;
+.site-nav,
+.user-nav{
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-wrapp{
@@ -61,13 +65,7 @@ body{
 
 .user-nav{
   width: 140px;
-}
-
-.site-nav,
-.user-nav{
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  margin-left: auto;
 }
 
 .site-nav a,
@@ -78,11 +76,25 @@ body{
   color: #f7f4f1;
 }
 
+.nav-wrapp .container{
+  display: flex;
+}
+
+.features{
+  margin-bottom: 80px;
+}
+
 .features-list{
+  display: flex;
+  justify-content: space-between ;
   list-style: none;
   text-align: center;
   padding: 0;
   margin: 0;
+}
+
+.features-item{
+  width: 300px;
 }
 
 .features-list h3{
@@ -91,6 +103,7 @@ body{
 }
 
 .wrapper-blocks{
+  display: flex;
   color: black;
   background-color: grey;
   background-image: url("../img/bg-all.png");
@@ -101,6 +114,7 @@ body{
   font-size: 30px;
   line-height: 42px;
 }
+
 
 .button{
   font: inherit;
@@ -114,17 +128,47 @@ body{
   vertical-align: middle;
 }
 
+.news{
+  margin-right:100px;
+}
+
 .news-list{
   list-style: none;
+  width: 380px;
+  padding: 0px;
+  margin: 0px;
 }
 
 .news-list time{
   transform: none;
 }
 
-.fotogallery figure{
+.fotogallery{
+  width: 300px;
+}
+
+.fotogallery img{
   border: 7px solid #ffffff;
   background-color: #ffffff;
+}
+
+.fotogallery figure{
+  margin: 0px;
+  padding: 0px;
+}
+
+.contacts{
+  margin-right: 100px;
+  width: 380px;
+}
+
+.booking{
+  width: 300px;
+}
+
+.booking p{
+  display: flex;
+  flex-direction: column;
 }
 
 .booking input{
@@ -134,20 +178,36 @@ body{
 }
 
 .main-footer{
+  width: 100%;
   color: white;
   background-color: #252525;
+  margin-top: 65px;
+}
+
+.main-footer .container{
+  display: flex;
+  padding-top: 60px;
 }
 
 .footer-contacts a{
   color:white;
 }
 
+.footer-contacts{
+  margin-right: 90px;
+  width: 310px;
+}
+
 .social{
+  width: 150px;
   text-align: center;
+  margin-right: 265px;
 }
 
 .social-list{
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 .social-button{
@@ -155,6 +215,7 @@ body{
 }
 
 .copyright{
+  width: 140px;
   text-align: center;
 }
 
