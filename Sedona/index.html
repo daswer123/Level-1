@@ -8,81 +8,99 @@
   </head>
   <body>
     <header class= "main-header">
+      <div class= "container">
       <nav class= "main-nav">
         <ul class= "site-navigate">
-          <li><a href= "#" class="main-logo"><img src= "img/logo.png" width="144" height="51" alt= "Логотип Седоны"></a></li>
+          <li class="main-logo"><a href= "#" ><img src= "img/logo.png" width="144" height="51" alt= "Логотип Седоны"></a></li>
           <li><a href= "#">Информация</a></li>
           <li><a href= "#">Фото и видео</a></li>
           <li><a href= "#">Карта штата</a></li>
           <li><a href= "#">Гостиницы</a></li>
         </ul>
       </nav>
+    </div>
     </header>
     <main>
+      <div class= "container">
       <h1 class="visually-hidden">Седона, горный курорт</h1>
       <img src= "img/index/bg.jpg" class= "main-img" width= "1200" height= "800" alt= "Главный вид гор Седоны">
       <p class= "slogan">
         <b>Седона-Небольшой городок в Аризоне, заслуживающий большего!</b>
         <span>Рассмотрим 5 причин, по которым седона круче, чем Гранд Каньон!</span>
       </p>
-      <section class= "feature feature-top">
-        <div class= "feature feature-left">
+    </div>
+      <section class= "features feature-top">
+        <div class= "container">
+        <div class= "feature-about feature-left">
           <h2>Настоящий городок</h2>
           <span class= "numb">№1</span>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
-        <img src= "img/index/feature-1.jpg" width= "800" height= "400" alt= "Изображение отеля">
+        <img src= "img/index/feature-1.jpg" width= "800" height= "258" alt= "Изображение отеля">
+        </div>
       </section>
+            <div class= "container">
       <section class= "specials">
         <h2 class= "visually-hidden">Особенности</h2>
         <ul class= "specials-list">
-          <li class= "home">
+          <li>
+            <span class= "specials-img home"></span>
             <b>Жильё</b>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class= "burger">
+          <li>
+            <span class= "specials-img burger"></span>
             <b>Еда</b>
             <p>Всегда заказывайте фирменный бургер!</p>
           </li>
-          <li class= "present">
+          <li>
+            <span class= "specials-img present"></span>
             <b>Сувениры</b>
             <p>Не только Китайского, но и местного производства!</p>
           </li>
         </ul>
       </section>
-      <section class= "feature feature-down">
-        <div class= "feature feature-right">
+      </div>
+      <section class= "features feature-down">
+        <div class= "container">
+        <div class= "feature-about feature-right">
           <h2>Там есть мост дьявола</h2>
           <span class= "numb">№2</span>
           <p>Да, по нему можно пройти! Если конечно ввы осмелитесь</p>
         </div>
-        <img src= "img/index/feature-2.jpg" width= "800" height= "400" alt= "Изображение Гранд-каньона">
+        <img src= "img/index/feature-2.jpg" width= "800" height= "258" alt= "Изображение Гранд-каньона">
+        </div>
       </section>
+      <div class= "container">
       <section class= "other-feature">
         <h2 class= "visually-hidden">Остальные особенности</h2>
         <ul class= "feature-list">
-          <li>
+          <li class= "feature-about">
             <b>Небольшая площадь</b>
             <span class= "numb">№3</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class= "feature-about">
             <b>Красивая дорога</b>
             <span class= "numb">№4</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class= "feature-about">
             <b>Мало туристов</b>
             <span class= "numb">№5</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
         </ul>
       </section>
+      </div>
       <section class= "booking">
+        <div class= "container">
+        <div class= "content-text">
         <h2 class= "visually-hidden">Бронироване гостинец</h2>
         <b>Заинтересовались?</b>
         <p>Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения в седоне.</p>
         <a href= "#" class= "booking-button">Поиск Гостиницы в Седоне</a>
+      </div>
         <form method= "post" action= "https://echo.htmlacademy.ru" class= "booking-form">
           <p>
             <label for= "checkin">Дата заезда:</label>
@@ -108,9 +126,13 @@
           </div>
           <button type= "submit" class= "button find-booking">Найти</button>
         </form>
-      </section>
+      </div>
+    </section>
+    <div class= "container">
       <img src= "img/index/map.jpg" class= "map" width="1200" height="600" alt="Карта">
+    </div>
     </main>
+          <div class= "container">
     <footer class= "main-footer">
       <p><b class= "Heshtag"> #VISITSEDONA </b></p>
       <div class= "social">
@@ -125,5 +147,6 @@
         <a href= "#"><img src= "img/htmllogo.svg" width= "115" height="40" alt= "Логотип HTMLACADEMY"></a>
       </p>
     </footer>
+        </div>
   </body>
 </html>

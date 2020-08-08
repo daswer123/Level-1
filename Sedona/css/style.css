@@ -12,6 +12,8 @@ body{
   margin: 0;
   padding: 0;
 
+
+  text-transform: uppercase;
   font-family: "PT Sans","Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
@@ -20,9 +22,66 @@ body{
 
 }
 
-.site-navigate{
-  list-style: none;
+.container{
+  width:1200px;
+  margin: 0 auto;
 }
+
+.inner-container{
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.main-header .container{
+  margin-top: 17px;
+}
+
+
+.site-navigate{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-left: 73px;
+  margin-bottom: 0px;
+}
+
+.site-navigate li{
+  display: flex;
+  width: 110px;
+  margin-right: 130px;
+}
+
+.site-navigate li:nth-child(1){
+  width:144px;
+  order: 3;
+}
+
+.site-navigate li:nth-child(2){
+  order: 1;
+  margin-left: 20px;
+}
+
+.site-navigate li:nth-child(3){
+  order: 2;
+  margin-right: 110px;
+  margin-left: 0px;
+}
+
+.site-navigate li:nth-child(4){
+  order: 3;
+  margin-right: 110px;
+
+}
+
+.site-navigate li:nth-child(5){
+  order: 4;
+  margin-right: 0px;
+}
+
 
 .site-navigate a{
   color: black;
@@ -31,30 +90,128 @@ body{
   text-decoration: none;
 }
 
+.main-img{
+  height: 510px;
+}
+
 .slogan{
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 50px;
   line-height: 26px;
+  text-align: center;
 }
 
 .slogan b {
     font-size: 21px;
+    margin-bottom: 35px;
 }
 
-.feature{
-  background-color: #81b3d2;
+.features{
   color: white;
 }
 
-.feature h2{
+.feature-left,
+.feature-right{
+  background-color: #81b3d2;
+}
+
+.feature-right{
+  order: 2;
+}
+
+.features .container{
+  display: flex;
+  width: 1200px;
+  padding: 0;
+}
+
+.feature-about h2
+{
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 160px;
   font-size: 21px;
+}
+
+.feature-about b{
+  margin: 0 auto;
+  margin-top: 55px;
+  margin-bottom: 25px;
+  width: 160px;
+  font-size: 21px;
+}
+
+.feature-about{
+  display:flex;
+  flex-direction: column;
+  width: 400px;
+  text-align: center;
+}
+
+.feature-about p{
+  width:280px;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.features img{
+  width: 800px;
 }
 
 .specials{
   background-color: #ffffff;
 }
 
+.specials-list li{
+  width: 280px;
+  text-align: center;
+}
+
+.specials-img{
+  display: block;
+  margin-bottom: 27px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home{
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/index/home.svg");
+  background-repeat: no-repeat;
+}
+
+.burger{
+  width: 74px;
+  height: 70px;
+  background-image: url("../img/index/burger.svg");
+  background-repeat: no-repeat;
+}
+
+.present{
+  height: 75px;
+  width: 64px;
+  background-image: url("../img/index/present.svg");
+  background-repeat: no-repeat;
+}
+
 .specials-list,
 .feature-list{
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+.specials-list{
+  margin-bottom: 80px;
 }
 
 .specials-list b,
@@ -64,9 +221,19 @@ body{
 
 .other-feature{
    background-color: #eeeeee;
+  margin-bottom: 50px;
+}
+
+.booking .container{
 }
 
 .booking b{
+  display: block;
+  margin: 0 auto;
+
+  margin-bottom: 35px;
+  text-align: center;
+  width: 320px;
   font-size: 30px;
   line-height: 36px;
 }
@@ -75,11 +242,22 @@ body{
   line-height: 24px;
 }
 
+.content-text p{
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 450px;
+}
+
 .booking-button{
+  margin: 0 auto;
+  display: block;
+  width: 570px;
   color: white;
   font-weight: bold;
   font-size: 21px;
   line-height: 24px;
+  padding: 32px 0;
 
   background-color: #766357;
   text-align: center;
@@ -88,9 +266,26 @@ body{
 }
 
 .booking-form{
+  width: 570px;
+  margin: 0 auto;
+  margin-bottom: 0;
+  padding-top: 50px;
   line-height: 26px;
   font-weight: bold;
 }
+
+.booking-form p{
+  padding: 0;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width:460px;
+}
+
+.booking-form input[type="text"]{
+    width: 330px;
+    margin-left: 20px;
+}
+
 
 .booking-form input{
   font: inherit;
@@ -98,11 +293,35 @@ body{
   border: 0;
 }
 
-.guests input{
-  text-align: center;
+
+.guests{
+  width: 460px;
+  display: flex;
+  margin: 0 auto;
 }
 
+.guests input{
+  width: 115px;
+  text-align: center;
+  margin-left: 35px;
+}
+
+.guests p:nth-child(2){
+  padding-left: 29px;
+}
+
+.guests p{
+  box-sizing: border-box;
+  width: 230px;
+}
+
+
 .find-booking{
+  width: 460px;
+  margin-top: 50px;
+  margin-left: 48px;
+  margin-bottom: 55px;
+  padding: 15px 0;
   color: white;
   font-weight: bold;
   font-size: 21px;
@@ -116,6 +335,9 @@ body{
 }
 
 .main-footer{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 45px;
   line-height: 26px;
   background-color: rgba(255,255,255,0.9);
 }
@@ -126,13 +348,22 @@ body{
 }
 
 .social-list{
+  display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .social-button{
+  display: block;
+  font-size: 0px;
+  width: 46px;
+  height: 48px;
   background-color:#81b3d2;
   text-align: center;
   vertical-align: middle;
+  background-position: center;
+  margin-right: 5px;
 
 }
 
@@ -150,13 +381,58 @@ body{
   background-repeat: no-repeat;
 }
 
-.options{
+.copyright{
+  display: flex;
+  color: black;
+}
+
+.copyright span{
+  margin-right: 10px;
+}
+
+
+.options-form{
   color: white;
   background-image: url("../img/hotels/filter.jpg");
+  background-repeat: no-repeat;
+
+  margin-bottom: 30px;
+}
+
+.additonals,
+.buildtype{
+  border: 0px;
+  margin: 0;
+  padding: 0;
+  width: 155px;
+  margin-right: 100px;
 }
 
 .additional-list{
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.additionals-item{
+  display: flex;
+  margin-top: 22px;
+}
+
+.additional-list:nth-last-child(1){
+  margin-bottom: 30px;
+}
+
+.real-checkbox{
+  width: 22px;
+  height: 22px;
+  background-image: url("../img/hotels/checkbox-off.svg");
+  order: -1;
+  margin-right: 15px;
+}
+
+.options{
+  margin-right: 325px;
 }
 
 .options h2{
@@ -165,12 +441,30 @@ body{
 }
 
 .filter{
+  display:flex;
   font-size: 12px;
   line-height: 18px;
+  margin-bottom: 30px;
+}
+
+.filter p{
+  margin-top: 5px;
+  padding: 0;
+  margin-left: 48px;
+  margin-right: 40px;
 }
 
 .filter-options{
+  display:flex;
   list-style: none;
+  margin: 0;
+  padding: 0;
+
+  margin-top: 5px;
+}
+
+.filter-options li{
+  margin-right: 30px;
 }
 
 .filter-options a{
@@ -183,25 +477,82 @@ body{
 }
 
 .filter h2{
+  padding: 0;
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
 }
 
 .filter-buttons{
+  display: flex;
+  margin-left: auto;
   list-style: none;
+}
+
+.filter-button{
+  border:0;
+  font-size: 0px;
+  width: 11px;
+  height: 10px;
+}
+
+.filter-up{
+  background-image: url("../img/hotels/up.svg");
+  background-color: white;
+}
+
+.filter-down{
+
+  background-image: url("../img/hotels/down.svg");
+  background-color: white;
+  margin-left: 12px;
+
 }
 
 .hotels-list{
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
+.hotel{
+  margin: 0;
+  padding: 30px 0;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel .inner-container{
+  display: flex;
+}
+
 .hotel h3{
+  margin: 0;
+  padding: 0;
   font-size:21px;
   line-height: 26px;
 }
 
+.hotel-about p{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.hotel-about span{
+  margin-left: 40px;
+}
+
+.hotel img{
+  margin-right: 30px;
+}
+
+.hotel-rating{
+  margin-left: auto;
+}
+
 .button{
+  box-sizing: border-box;
   text-align: center;
   font-weight: bold;
   text-decoration: none;
@@ -210,18 +561,44 @@ body{
 }
 
 .button-blue{
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 110px;
   background-color: #81b3d2;
+  margin-right: 5px;
 }
 
 .button-brown{
-  background-color: #766357;
+  width: 140px;
+  padding: 2px,0;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: #766357
 }
 
 .rate{
   background-color: #f2f2f2;
+  padding: 0px 15px;
+  margin-top: 47px;
 }
 
 .starts{
+  margin-left: auto;
+  width: 18px;
+  height: 17px;
+  font-size: 0px;
   background-image: url(../img/hotels/star.svg);
   background-repeat: repeat-x;
+}
+
+.starts-2{
+  width: 36px;
+}
+
+.starts-3{
+  width:  54px;
+}
+
+.starts-4{
+  width: 72px;
 }
