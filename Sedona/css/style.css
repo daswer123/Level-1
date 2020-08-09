@@ -16,6 +16,7 @@ img{
 body{
   margin: 0;
   padding: 0;
+  position: relative;
 
 
   text-transform: uppercase;
@@ -43,8 +44,14 @@ body{
 
 .main-header .container{
   margin-top: 17px;
+  position: relative;
 }
 
+.main-logo{
+  position: absolute;
+  left: 46%;
+  top: -100%;
+}
 
 .site-navigate{
   display: flex;
@@ -57,7 +64,6 @@ body{
 .site-navigate li{
   display: flex;
   width: 110px;
-  margin-right: 130px;
 }
 
 .site-navigate li:nth-child(1){
@@ -72,13 +78,14 @@ body{
 
 .site-navigate li:nth-child(3){
   order: 2;
-  margin-right: 110px;
-  margin-left: 0px;
+  margin-right: 360px;
+  margin-left: 144px;
 }
 
 .site-navigate li:nth-child(4){
   order: 3;
-  margin-right: 110px;
+  margin-right: 144px;
+
 
 }
 
@@ -230,6 +237,7 @@ body{
 }
 
 .booking .container{
+  position: relative;
 }
 
 .booking b{
@@ -255,6 +263,7 @@ body{
 }
 
 .booking-button{
+  position: relative;
   margin: 0 auto;
   display: block;
   width: 570px;
@@ -271,6 +280,10 @@ body{
 }
 
 .booking-form{
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  left: 26.22%;
   width: 570px;
   margin: 0 auto;
   margin-bottom: 0;
@@ -339,12 +352,25 @@ body{
   text-decoration: none;
 }
 
-.main-footer{
+.inner-footer{
+  width: 1200px;
   display: flex;
   justify-content: space-around;
   padding-top: 45px;
   line-height: 26px;
-  background-color: rgba(255,255,255,0.9);
+ background-color: rgba(255,255,255,0.9);
+}
+
+.main-footer{
+  width: 1200px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 45px;
+  line-height: 26px;
+ background-color: rgba(255,255,255,0.9);
+
 }
 
 .Heshtag{

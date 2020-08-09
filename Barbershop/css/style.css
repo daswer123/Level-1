@@ -361,6 +361,13 @@ body{
   margin-top: 65px;
 }
 
+.main-footer{
+  width: 100%;
+  color: white;
+  background-color: #252525;
+  margin-top: 65px;
+}
+
 .main-footer .container{
   display: flex;
   padding-top: 60px;
