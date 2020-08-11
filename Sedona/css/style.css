@@ -280,6 +280,7 @@ body{
 }
 
 .booking-form{
+  display: none;
   background-color: white;
   position: absolute;
   top: 100%;
@@ -437,6 +438,7 @@ body{
   padding-top: 45px;
   line-height: 26px;
  background-color: rgba(255,255,255,0.9);
+ z-index: 3;
 
 }
 
@@ -823,4 +825,29 @@ body{
 
 .starts-4{
   width: 72px;
+}
+
+.map{
+  z-index: -1;
+  position: absolute;
+}
+
+@keyframes ople {
+
+0% {opacity: 0.1;}
+25% {opacity: 0.35;}
+60% {opacity: 0.7;}
+100% {opacity: 1;}
+
+}
+.show{
+  display: block;
+
+  animation-name: ople;
+  animation-duration: 0.8s;
+  z-index: 2;
+}
+
+.mapping{
+  min-height: 600px;
 }

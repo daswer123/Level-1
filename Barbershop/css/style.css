@@ -1034,3 +1034,29 @@ body{
   top: 25%;
   left: -20px
 }
+
+.modal-map img{
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+@keyframes apper {
+
+0% {  transform: translateY(-2000px);}
+50% { transform: translateY(0px);}
+90% { transform: translateY(-10px);}
+100%{ transform: translateY(0px);}
+
+}
+
+.modal-show-over{
+  display: block;
+}
+
+.modal-show{
+  display: block;
+  animation-duration: 0.8s;
+  animation-name: apper;
+}
