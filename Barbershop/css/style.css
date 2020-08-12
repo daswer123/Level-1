@@ -251,6 +251,12 @@ body{
   padding: 10px 30px;
 }
 
+.button:hover,
+.button:active,
+.button:focus{
+  background-color: #663d15;
+}
+
 .news{
   margin-right:100px;
 }
@@ -327,6 +333,10 @@ body{
   justify-content: space-between;
   display: flex;
   flex-wrap: wrap;
+}
+
+.booking-item input:hover{
+  border-color: #663d15;
 }
 
 
@@ -416,6 +426,12 @@ body{
   padding: 0;
 }
 
+.social-button:hover,
+.social-button:active,
+.social-button:focus{
+  background-color: blue;
+}
+
 .social-button-vk{
   background-image: url("../img/vk.svg");
   background-repeat: no-repeat;
@@ -445,6 +461,14 @@ body{
     padding: 0;
   text-align: center;
 }
+
+.copyright .button:hover,
+.copyright .button:active,
+.copyright .button:focus{
+  background-color: white;
+  color: black;
+}
+
 
 .modal{
   display: none;
@@ -718,6 +742,14 @@ body{
     left: -42px;
 }
 
+.maker-name:hover{
+  color: #663d15;
+}
+
+.type-item:hover{
+  color: #663d15;
+}
+
 .type-item input:checked +
 .option-radio::before{
   content: "";
@@ -762,6 +794,10 @@ body{
   margin-bottom: 20px;
   width: 220px;
   background-color: #ffffff;
+}
+
+.item:hover{
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .item h3 {

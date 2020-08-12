@@ -66,6 +66,8 @@ body{
   width: 110px;
 }
 
+
+
 .site-navigate li:nth-child(1){
   width:144px;
   order: 3;
@@ -100,6 +102,19 @@ body{
   font-weight: 700;
   line-height: 24px;
   text-decoration: none;
+}
+
+
+.site-navigate a:hover{
+  color: #81b3d2;
+}
+
+.site-navigate a:active{
+  color:#b2b2b2;
+}
+
+.site-navigate .active-nav{
+  color: #9b8d84;
 }
 
 .main-img{
@@ -279,6 +294,12 @@ body{
   text-decoration: none;
 }
 
+.booking-button:hover{
+  background-color: #604e43;
+}
+
+
+
 .booking-form{
   display: none;
   background-color: white;
@@ -316,6 +337,9 @@ body{
   border: 0;
 }
 
+.booking-form input:focus{
+  background-color: white;
+}
 
 .guests{
   width: 450px;
@@ -356,6 +380,10 @@ body{
   position: relative;
   width: 11px;
   height: 11px;
+}
+
+.plus::before{
+  background-color: #000000;
 }
 
 .plus::before{
@@ -403,6 +431,7 @@ body{
 }
 
 .find-booking{
+  display: block;
   width: 460px;
   margin-top: 30px;
   margin-left: 48px;
@@ -465,6 +494,10 @@ body{
   background-position: center;
   margin-right: 5px;
 
+}
+
+.social-button:hover{
+  background-color: #5496bd;
 }
 
 .social-button-tw{
@@ -579,6 +612,10 @@ body{
 
 }
 
+.costs-form input::placeholder{
+  color:white;
+}
+
 .costs-form::after{
   content: "";
 
@@ -632,6 +669,17 @@ body{
     top: -10px;
 }
 
+.range-min:hover{
+  box-shadow: 0 0 5px rgba(255,255,255,0.6);
+  border-radius: 50%;
+}
+
+.range-max:hover{
+  box-shadow: 0 0 5px rgba(255,255,255,0.6);
+  border-radius: 50%;
+}
+
+
 .range-max{
   position: absolute;
   width: 20px;
@@ -662,6 +710,11 @@ body{
   background-color: transparent;
 
   padding: 7px 35px;
+}
+
+.button-form:hover{
+  background-color: white;
+  color:black;
 }
 
 .filter{
@@ -695,6 +748,14 @@ body{
   color: #e6e6e6;
 }
 
+.filter-options a:hover{
+  color: #b3d1e4;
+}
+
+.filter-options a:active{
+  color:#666666;
+}
+
 .filter-options .active-option{
   color: #81b3d2;
   text-decoration: none;
@@ -721,16 +782,25 @@ body{
   height: 10px;
 }
 
+.filter-button:hover polyline{
+  fill: #231f20;
+}
+
+.filter-button:active polyline{
+  fill: #a3c7de;
+}
+
+
+
+
 .filter-up{
-  background-image: url("../img/hotels/up.svg");
+    margin-left: 12px;
   background-color: white;
 }
 
 .filter-down{
 
-  background-image: url("../img/hotels/down.svg");
   background-color: white;
-  margin-left: 12px;
 
 }
 
@@ -758,6 +828,10 @@ body{
   line-height: 26px;
 }
 
+.hotel h3:hover{
+  color: #81b3d2;
+}
+
 .hotel-about p{
   margin-top: 12px;
   margin-bottom: 12px;
@@ -782,6 +856,8 @@ body{
   text-decoration: none;
   color: white;
   vertical-align: middle;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .button-blue{
@@ -792,12 +868,20 @@ body{
   margin-right: 5px;
 }
 
+.button-blue:hover{
+  background-color: #669ec0;
+}
+
 .button-brown{
   width: 140px;
   padding: 2px,0;
   padding-left: 16px;
   padding-right: 16px;
   background-color: #766357
+}
+
+.button-brown:hover{
+  background-color: #604e43;
 }
 
 .rate{
